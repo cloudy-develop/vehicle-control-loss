@@ -3,7 +3,7 @@
 A FiveM resource adding the chance your vehicle will lose control when the weather is bad.
 
 ## Information
-Vehicle Control Loss is a script that adds the the chance your vehicle will lose control in bad weather it. You can change the chance the vehicle will loose control and what vehicles won't lose control.
+Vehicle Control Loss is a script that adds the chance your vehicle will lose control in bad weather. You can change the chance the vehicle will lose control randomly and when turning over a certain speed.  You can also add what vehicles won't lose control.
 
 ## How to Install
  
