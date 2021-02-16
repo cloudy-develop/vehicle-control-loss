@@ -5,17 +5,22 @@ local vehControlEnabled = false
 local isPadShaking = false
 
 Citizen.CreateThread(function()
+
     while (true) do
 
         if (vehicleAllowed) then
 
             if not (vehControlEnabled) then
 
-                if (GetEntitySpeed(playerVehicle) > 30.0) and (GetVehicleSteeringAngle(playerVehicle) > 30.0) then
+                if (GetEntitySpeed(playerVehicle) > 30.0) then
+				
+					if (GetVehicleSteeringAngle(playerVehicle) > 30.0) or (GetVehicleSteeringAngle(playerVehicle) < -30.0) then
 
-                    if (math.random(0, config.steeringChance) == 0) then
-                        TriggerEvent('VehicleControlLoss', playerVehicle)
-                    end
+						if (math.random(0, config.steeringChance) == 0) then
+							TriggerEvent('VehicleControlLoss', playerVehicle)
+						end
+						
+					end
 
                 end
 

@@ -1,7 +1,7 @@
 config = {
 
     randomChance = 35, -- The chance you will go out of control randomly (Minimum of 1).
-    steeringChance = 10, -- The chance you will go out of control when turning (Minimum of 1).
+    steeringChance = 15, -- The chance you will go out of control when turning (Minimum of 1).
 
     disabledVehicles = { -- List of vehicle models you don't want to lose control.
 
