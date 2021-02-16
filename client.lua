@@ -13,14 +13,14 @@ Citizen.CreateThread(function()
             if not (vehControlEnabled) then
 
                 if (GetEntitySpeed(playerVehicle) > 30.0) then
-				
-					if (GetVehicleSteeringAngle(playerVehicle) > 30.0) or (GetVehicleSteeringAngle(playerVehicle) < -30.0) then
 
-						if (math.random(0, config.steeringChance) == 0) then
-							TriggerEvent('VehicleControlLoss', playerVehicle)
-						end
-						
-					end
+                    if (GetVehicleSteeringAngle(playerVehicle) > 30.0) or (GetVehicleSteeringAngle(playerVehicle) < -30.0) then
+
+                        if (math.random(0, config.steeringChance) == 0) then
+                            TriggerEvent('VehicleControlLoss', playerVehicle)
+                        end
+
+                    end
 
                 end
 
